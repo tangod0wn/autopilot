@@ -1,6 +1,6 @@
 *** Settings ***
 
-Documentation       This is a basic test
+Documentation       Campaign creation test
 Library             SeleniumLibrary
 Resource            ../Pages/LoginPage.robot
 Resource            ../Pages/DashboardPage.robot
