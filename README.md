@@ -10,6 +10,7 @@ After running the tests a report and log file appear in HTML format inside of th
  
 `robot --variable BROWSER:Firefox Results Tests/CampaignCreationE2ETest.robot`
 
+In the future, it would be great to have this run ontop of browser stack for crossbrowser/device testing.
 
 ### installation steps (Mac):
 - sudo easy_install pip
@@ -18,6 +19,7 @@ After running the tests a report and log file appear in HTML format inside of th
 - brew cask install chromedriver
  
 #### Running the tests locally
-- from the root directory, run:
+   First, update the dummy hardcoded credentials inside of Pages/LoginPage.robot with a valid email address and password 
+- from the root directory, you can then run:
 
 `robot -d Results Tests/CampaignCreationE2ETest.robot`
