@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20191112 14:26:18.478" generator="Robot 3.1.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/SimpleKYC/apps/2019/autopilothq/Tests/CampaignCreationE2ETest.robot" id="s1" name="CampaignCreationE2ETest">
+<test id="s1-t1" name="campaign creation E2E_journey">
+<kw name="User can log in" library="LoginPage">
+<doc>As a user I can open the home page and see the tagline</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://login.autopilothq.com/login</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20191112 14:26:18.727" level="INFO">Opening browser 'chrome' to base url 'https://login.autopilothq.com/login'.</msg>
+<status status="PASS" endtime="20191112 14:26:24.584" starttime="20191112 14:26:18.727"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Login to Autopilot</arg>
+</arguments>
+<status status="PASS" endtime="20191112 14:26:24.677" starttime="20191112 14:26:24.585"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${EMAIL_VAL}</arg>
+</arguments>
+<msg timestamp="20191112 14:26:24.678" level="INFO">Typing text 'n31l@protonmail.com' into text field '//input[@name="email"]'.</msg>
+<status status="PASS" endtime="20191112 14:26:24.835" starttime="20191112 14:26:24.678"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${PASSWORD_VAL}</arg>
+</arguments>
+<msg timestamp="20191112 14:26:24.835" level="INFO">Typing text '08548233' into text field '//input[@name="password"]'.</msg>
+<status status="PASS" endtime="20191112 14:26:24.909" starttime="20191112 14:26:24.835"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOGIN_BUTTON}</arg>
+</arguments>
+<msg timestamp="20191112 14:26:24.910" level="INFO">Clicking element '//input[@value="Login"]'.</msg>
+<status status="PASS" endtime="20191112 14:26:29.916" starttime="20191112 14:26:24.910"></status>
+</kw>
+<status status="PASS" endtime="20191112 14:26:29.917" starttime="20191112 14:26:18.726"></status>
+</kw>
+<status status="PASS" endtime="20191112 14:26:29.918" critical="yes" starttime="20191112 14:26:18.725"></status>
+</test>
+<doc>This is a basic test</doc>
+<status status="PASS" endtime="20191112 14:26:29.920" starttime="20191112 14:26:18.480"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="CampaignCreationE2ETest" pass="1">CampaignCreationE2ETest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
